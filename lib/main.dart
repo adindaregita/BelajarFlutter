@@ -15,21 +15,16 @@ class MyApp extends StatefulWidget {
 class MyAppState extends State<MyApp> {
   final questions = const [
     {
-      'questionText': 'Siapa kah nama panjang nenek keluarga Hasan Galung?',
-      'answers': [
-        'Mak Tua',
-        'Maimunah',
-        'Mak Tua tapi masih muda',
-        'Mama Muda'
-      ],
+      'questionText': '1 + 1 = ?',
+      'answers': ['2', '5', '7', 'Berapa we'],
     },
     {
-      'questionText': 'Siapakah yang paling lucu di keluarga Hasan Galung?',
-      'answers': ['Om Denan', 'Om Incut', 'Tante Mari', 'Tante Illing']
+      'questionText': 'Pendiri Tesla',
+      'answers': ['Elon Musk', 'Martin Eberhard', 'Steve Job', 'Bill Gates']
     },
     {
-      'questionText': 'Siapa anak keluarga Hasan Galung yang paling bergaya?',
-      'answers': ['Tante Illing', 'Om Ican', 'Tante Uu', 'Om Muksen']
+      'questionText': 'Raja dari segala buah di dunia adalah?',
+      'answers': ['Durian', 'Pisang', 'Mangga', 'Kelengkeng']
     },
   ];
 
@@ -55,7 +50,7 @@ class MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Quiz Keluarga HG Berhadiah'),
+          title: Text('Quiz Coba-Coba'),
         ),
         body: _questionIndex < questions.length
             ? Column(
